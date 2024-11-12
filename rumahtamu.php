@@ -8,7 +8,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&family=Inria+Sans:wght@700&display=swap" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap" rel="stylesheet">
-
+    <style>
+        /* Top header styling */
+        .header {
+            background-color: #001f54;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .header .title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal; /* Less bold */
+        }
+        .header .logout {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            position: absolute;
+            right: 55px;
+            font-weight: normal; /* Less bold */
+        }
+    </style>
 
 </head>
 <body>
@@ -17,17 +45,23 @@
     <div class="background-image"></div>
 
     <!-- Header Section -->
-    <header class="navbar">
+    <div class="header">
+        <span class="title">SISTEM TEMPAHAN RUMAH TAMU UNIVERSITI KEBANGSAAN MALAYSIA</span>
+        <form action="login.php" method="POST">
+            <a href="login.php" class="logout">Log Keluar</a>
+        </form>
+    </div>
+
+    <!-- <header class="navbar">
         <div class="navbar-content">
             <h1>SISTEM TEMPAHAN RUMAH TAMU UNIVERSITI KEBANGSAAN MALAYSIA</h1>
             <form action="login.php" method="POST">
                 <div class="logout">
                     <button type="submit" class="logout"><i class="fas fa-user"></i> Log Keluar</button>
                 </div>
-                <!-- <button type="submit" class="logout">Logout</button> -->
             </form>
         </div>
-    </header>
+    </header> -->
 
     <!-- Main Content Container -->
     <div class="main-container">
